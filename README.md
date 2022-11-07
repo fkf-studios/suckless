@@ -3,8 +3,9 @@ this is my suckless config
 It is actually Luke Smiths config but I just modified it a bit
 
 # install
-`git clone https://github.com/fkf-studios/suckless' 
+
 ```
+git clone https://github.com/fkf-studios/suckless
 cd suckless
 cd dwm
 sudo make install
