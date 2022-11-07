@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Constants */
-#define TERMINAL "st"
-#define TERMCLASS "St"
+#define TERMINAL "kitty"
+#define TERMCLASS "kitty"
 
 /* appearance */
 static unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -164,7 +164,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,		spawn,		SHCMD("cat ~/scripts/dm-stuff | dmenu -l 30 | fish") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD(TERMINAL " -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
 	{ MODKEY,			XK_r,		spawn,		SHCMD(TERMINAL " -e lf") },
-	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD(TERMINAL " -e htop") },
+	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD(TERMINAL " -e bpytop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
 	{ MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} }, /* bstack */
 	{ MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} }, /* spiral */
@@ -176,7 +176,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_o,		incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_o,		incnmaster,     {.i = -1 } },
 	{ MODKEY,			XK_p,			spawn,		SHCMD("mpc toggle") },
-	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("mpc pause ; pauseallmpv") },
+	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("archlinux-logout") },
 	{ MODKEY,			XK_bracketleft,		spawn,		SHCMD("mpc seek -10") },
 	{ MODKEY|ShiftMask,		XK_bracketleft,		spawn,		SHCMD("mpc seek -60") },
 	{ MODKEY,			XK_bracketright,	spawn,		SHCMD("mpc seek +10") },
